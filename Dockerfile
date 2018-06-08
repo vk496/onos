@@ -26,7 +26,7 @@ RUN apt-get update && apt-get install -y zip python git bzip2 && \
 
 
 # Second stage is the runtime environment
-FROM anapsix/alpine-java:8_server-jre
+FROM anapsix/alpine-java:8_jdk
 
 # Change to /root directory
 RUN apk update && \
